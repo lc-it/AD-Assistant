@@ -1,0 +1,716 @@
+2025-09-16 11:46:41,969 - INFO - ================ Application Started ================
+2025-09-16 11:46:52,830 - INFO - User 'leot' is attempting to log in.
+2025-09-16 11:46:52,985 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 11:47:10,270 - INFO - User 'leot' closed the application.
+2025-09-16 11:50:19,119 - INFO - ================ Application Started ================
+2025-09-16 11:50:25,079 - INFO - User 'leot' is attempting to log in.
+2025-09-16 11:50:25,169 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 11:58:18,186 - INFO - ================ Application Started ================
+2025-09-16 11:58:24,609 - INFO - User 'leot' is attempting to log in.
+2025-09-16 11:58:24,695 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 11:59:32,279 - INFO - User 'leot' closed the application.
+2025-09-16 11:59:34,888 - INFO - ================ Application Started ================
+2025-09-16 11:59:40,750 - INFO - User 'leot' is attempting to log in.
+2025-09-16 11:59:40,852 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 12:02:44,867 - INFO - User 'leot' closed the application.
+2025-09-16 12:02:47,564 - INFO - ================ Application Started ================
+2025-09-16 12:03:28,324 - INFO - ================ Application Started ================
+2025-09-16 12:03:34,924 - INFO - User 'leot' is attempting to log in.
+2025-09-16 12:03:35,027 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:14:03,578 - INFO - ================ Application Started ================
+2025-09-16 13:14:12,930 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:14:13,070 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:14:20,680 - INFO - User 'leot' closed the application.
+2025-09-16 13:14:37,605 - INFO - ================ Application Started ================
+2025-09-16 13:14:43,615 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:14:43,697 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:21:51,139 - INFO - User 'leot' closed the application.
+2025-09-16 13:24:47,271 - INFO - ================ Application Started ================
+2025-09-16 13:24:54,357 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:24:54,467 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:25:17,618 - INFO - User 'leot' closed the application.
+2025-09-16 13:25:17,706 - INFO - ================ Application Started ================
+2025-09-16 13:25:25,342 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:25:25,443 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:26:01,751 - INFO - User 'leot' closed the application.
+2025-09-16 13:26:51,286 - INFO - ================ Application Started ================
+2025-09-16 13:26:57,343 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:26:57,456 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:26:57,667 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:26:57,668 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 13:27:04,953 - INFO - 'ERP助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:27:05,688 - INFO - 'IT助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:27:17,252 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:27:34,652 - INFO - User 'leot' is querying assistant 'policy' with: '我想特休'
+2025-09-16 13:27:38,642 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:37:08,219 - INFO - User 'leot' closed the application.
+2025-09-16 13:37:08,357 - INFO - ================ Application Started ================
+2025-09-16 13:37:21,027 - INFO - ================ Application Started ================
+2025-09-16 13:37:26,580 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:37:26,661 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:37:26,950 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:37:26,951 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 13:37:44,174 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:37:47,252 - INFO - User 'leot' is querying assistant 'policy' with: '我想請特休'
+2025-09-16 13:38:00,188 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:40:27,200 - INFO - User 'leot' is querying assistant 'policy' with: '你好嗎？'
+2025-09-16 13:40:34,411 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:42:42,059 - INFO - User 'leot' is querying assistant 'policy' with: '你好嗎？'
+2025-09-16 13:42:50,660 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:43:16,531 - INFO - User 'leot' is querying assistant 'policy' with: '我遲到了, 怎麼辦?'
+2025-09-16 13:43:26,713 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:46:48,029 - INFO - 'ERP助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:46:50,685 - INFO - 'IT助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:48:00,579 - INFO - User 'leot' is querying assistant 'policy' with: '我遲到了, 怎麼辦?'
+2025-09-16 13:48:27,921 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:50:12,745 - INFO - User 'leot' is querying assistant 'policy' with: '我想請特休,要怎麼請'
+2025-09-16 13:50:36,578 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:54:49,067 - INFO - User 'leot' is querying assistant 'policy' with: '我想請假'
+2025-09-16 13:55:19,101 - ERROR - Webhook call for assistant 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 238, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 13:55:43,132 - INFO - User 'leot' is querying assistant 'policy' with: '我想請特休, 要怎麼請'
+2025-09-16 13:56:09,290 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:56:53,096 - INFO - User 'leot' closed the application.
+2025-09-16 13:56:53,306 - INFO - ================ Application Started ================
+2025-09-16 13:58:27,969 - INFO - ================ Application Started ================
+2025-09-16 13:58:36,879 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:58:37,022 - ERROR - An exception occurred during login for 'leot': automatic bind not successful - invalidCredentials
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 76, in authenticate_ad_and_get_groups
+    conn = Connection(server, user=user_principal_name, password=password, auto_bind=True)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\ldap3\core\connection.py", line 363, in __init__
+    self._do_auto_bind()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\ldap3\core\connection.py", line 412, in _do_auto_bind
+    raise LDAPBindError(error)
+ldap3.core.exceptions.LDAPBindError: automatic bind not successful - invalidCredentials
+2025-09-16 13:58:43,891 - INFO - User 'leot' is attempting to log in.
+2025-09-16 13:58:43,986 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 13:58:44,486 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 13:58:44,491 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 13:58:54,309 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 13:59:25,258 - INFO - User 'leot' is querying assistant 'policy' with: '我連續曠職, 公司拿我怎麼辦?'
+2025-09-16 13:59:40,208 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:00:09,664 - INFO - User 'leot' closed the application.
+2025-09-16 14:00:09,912 - INFO - ================ Application Started ================
+2025-09-16 14:01:18,140 - INFO - ================ Application Started ================
+2025-09-16 14:01:26,398 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:01:26,569 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:01:26,893 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 14:01:26,894 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 14:01:34,671 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:18:54,243 - INFO - User 'leot' closed the application.
+2025-09-16 14:18:54,420 - INFO - ================ Application Started ================
+2025-09-16 14:19:05,307 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:19:05,351 - ERROR - An exception occurred during login for 'leot': automatic bind not successful - invalidCredentials
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 394, in authenticate_ad_and_get_groups
+    server = Server(AD_SERVER, port=AD_PORT, use_ssl=USE_SSL, get_info=ALL, tls=tls_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\ldap3\core\connection.py", line 363, in __init__
+    self._do_auto_bind()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\ldap3\core\connection.py", line 412, in _do_auto_bind
+    raise LDAPBindError(error)
+ldap3.core.exceptions.LDAPBindError: automatic bind not successful - invalidCredentials
+2025-09-16 14:19:16,186 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:19:16,269 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:19:27,489 - INFO - User 'leot' closed the application.
+2025-09-16 14:19:30,754 - INFO - ================ Application Started ================
+2025-09-16 14:20:02,269 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:20:02,422 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:20:02,907 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 14:20:02,907 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 14:20:22,641 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:20:49,325 - INFO - User 'leot' is querying assistant 'policy' with: '我不想幹了, 我要怎麼辦?'
+2025-09-16 14:21:09,690 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:23:40,987 - INFO - User 'leot' is querying assistant 'policy' with: '我要查蔡存悌的分機'
+2025-09-16 14:23:41,286 - INFO - User 'leot' is querying assistant 'policy' with: '我要查蔡存悌的分機'
+2025-09-16 14:23:47,545 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:23:54,883 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:23:58,641 - INFO - User 'leot' is querying assistant 'policy' with: '我要查LEO的分機'
+2025-09-16 14:24:28,661 - ERROR - Webhook call for assistant 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 239, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 14:25:10,626 - INFO - User 'leot' is querying assistant 'policy' with: '我要請購一個料號, 我要怎麼申請?'
+2025-09-16 14:25:36,840 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:28:04,999 - INFO - User 'leot' is querying assistant 'policy' with: '我要申請料號, 我要怎麼申請?'
+2025-09-16 14:28:18,754 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:29:22,554 - INFO - 'ERP助理' tab selected for the first time. Fetching initial data.
+2025-09-16 14:30:31,303 - INFO - User 'leot' is querying assistant 'policy' with: '我上班途中跌倒了, 有相關的補償嗎?'
+2025-09-16 14:30:55,500 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:31:52,492 - INFO - User 'leot' closed the application.
+2025-09-16 14:31:52,606 - INFO - ================ Application Started ================
+2025-09-16 14:31:54,707 - INFO - ================ Application Started ================
+2025-09-16 14:31:57,058 - INFO - ================ Application Started ================
+2025-09-16 14:32:04,383 - INFO - ================ Application Started ================
+2025-09-16 14:32:07,859 - INFO - ================ Application Started ================
+2025-09-16 14:32:11,336 - INFO - ================ Application Started ================
+2025-09-16 14:40:14,279 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:40:14,450 - INFO - User 'leot' logged in successfully. Assigned groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:40:15,100 - INFO - '辦法助理' tab selected for the first time. Fetching initial data.
+2025-09-16 14:40:15,102 - INFO - User 'leot' is querying assistant 'policy' with: '__GET_WELCOME_MESSAGE__'
+2025-09-16 14:40:34,988 - INFO - Webhook call for assistant 'policy' succeeded.
+2025-09-16 14:40:44,191 - INFO - User 'leot' is querying assistant 'policy' with: '我要請假'
+2025-09-16 14:41:03,306 - INFO - User 'leot' closed the application.
+2025-09-16 14:41:03,650 - INFO - ================ Application Started ================
+2025-09-16 14:41:14,210 - ERROR - Webhook call for assistant 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 239, in perform_assistant_query
+    class LoginWindow(tk.Tk):
+                           ^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 14:41:24,888 - INFO - ================ Application Started ================
+2025-09-16 14:41:36,813 - INFO - ================ Application Started ================
+2025-09-16 14:41:42,879 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:41:42,976 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:41:49,521 - INFO - User 'leot' closed the application.
+2025-09-16 14:42:13,775 - INFO - ================ Application Started ================
+2025-09-16 14:42:19,478 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:42:19,582 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:42:44,905 - INFO - User 'leot' querying 'policy': '我要查請假規定'
+2025-09-16 14:43:12,919 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 14:43:28,615 - INFO - User 'leot' closed the application.
+2025-09-16 14:49:08,524 - INFO - ================ Application Started ================
+2025-09-16 14:49:16,269 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:49:16,369 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:49:19,028 - INFO - User 'leot' closed the application.
+2025-09-16 14:49:38,719 - INFO - ================ Application Started ================
+2025-09-16 14:49:50,589 - INFO - User 'leot' is attempting to log in.
+2025-09-16 14:49:50,735 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 14:50:18,296 - INFO - User 'leot' querying 'policy': '我要請假'
+2025-09-16 14:50:48,340 - ERROR - Webhook call for 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 216, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 15:00:15,325 - INFO - User 'leot' closed the application.
+2025-09-16 15:01:27,330 - INFO - ================ Application Started ================
+2025-09-16 15:01:34,113 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:01:34,216 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:01:40,716 - INFO - User 'leot' closed the application.
+2025-09-16 15:03:08,781 - INFO - ================ Application Started ================
+2025-09-16 15:03:16,379 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:03:16,466 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:03:51,946 - INFO - User 'leot' querying 'policy': '我受傷了, 不能上班怎麼辦?'
+2025-09-16 15:04:16,805 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:04:41,748 - INFO - User 'leot' querying 'policy': '我因公受傷, 不能上班怎麼辦?'
+2025-09-16 15:05:11,781 - ERROR - Webhook call for 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 186, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 15:08:58,499 - INFO - User 'leot' querying 'policy': '我因公受傷, 不能上班怎麼辦?'
+2025-09-16 15:09:24,972 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:11:21,190 - INFO - User 'leot' querying 'policy': '我下班要去跟客戶喝花酒, 交際費可以申請嗎?'
+2025-09-16 15:11:38,268 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:13:09,704 - INFO - User 'leot' querying 'policy': '我的交際費為3千1元, 這個會簽到哪?'
+2025-09-16 15:13:22,960 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:23:34,455 - INFO - User 'leot' closed the application.
+2025-09-16 15:23:36,849 - INFO - ================ Application Started ================
+2025-09-16 15:23:45,464 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:23:45,624 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:23:49,046 - INFO - User 'leot' closed application.
+2025-09-16 15:23:50,869 - INFO - ================ Application Started ================
+2025-09-16 15:24:26,362 - INFO - ================ Application Started ================
+2025-09-16 15:24:32,019 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:24:32,116 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:26:15,651 - INFO - User 'leot' closed application.
+2025-09-16 15:26:21,997 - INFO - ================ Application Started ================
+2025-09-16 15:26:27,992 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:26:28,107 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:26:55,966 - INFO - User 'leot' querying 'policy': '我快死了, 公司有相補償嗎?'
+2025-09-16 15:27:25,973 - ERROR - Webhook call for 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 198, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 15:28:15,769 - INFO - User 'leot' querying 'policy': '我上班途中受傷, 公司有補償嗎?'
+2025-09-16 15:28:41,052 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:29:38,161 - INFO - User 'leot' querying 'policy': '我外出時受傷, 可以申請什麼補助?'
+2025-09-16 15:29:45,923 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:30:06,489 - INFO - User 'leot' querying 'policy': '我因公外出或出差時受傷, 可以申請什麼補助?'
+2025-09-16 15:30:17,762 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:30:36,375 - INFO - User 'leot' querying 'policy': '我因公外出或出差時受傷怎麼辦?'
+2025-09-16 15:30:43,823 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:33:58,884 - INFO - User 'leot' querying 'policy': '我因公外出或出差時受傷怎麼辦?'
+2025-09-16 15:34:17,823 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:34:51,273 - INFO - User 'leot' closed application.
+2025-09-16 15:38:56,256 - INFO - ================ Application Started ================
+2025-09-16 15:39:02,301 - INFO - User 'leot' is attempting to log in.
+2025-09-16 15:39:02,389 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 15:39:24,677 - INFO - User 'leot' querying 'policy': '我想請病假'
+2025-09-16 15:39:54,692 - ERROR - Webhook call for 'policy' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 199, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-16 15:40:43,168 - INFO - User 'leot' querying 'policy': '我想請病假'
+2025-09-16 15:41:06,983 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 15:41:59,628 - INFO - User 'leot' closed application.
+2025-09-16 16:57:51,254 - INFO - ================ Application Started ================
+2025-09-16 16:58:00,854 - INFO - User 'leot' is attempting to log in.
+2025-09-16 16:58:00,953 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-16 16:59:12,211 - INFO - User 'leot' querying 'policy': '交際費管理辦法中是否有關定參與者上層主管也審核?'
+2025-09-16 16:59:39,345 - INFO - Webhook call for 'policy' succeeded.
+2025-09-16 17:10:54,649 - INFO - User 'leot' closed application.
