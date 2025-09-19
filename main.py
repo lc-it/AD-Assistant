@@ -25,7 +25,7 @@ FONT_MONO = ("Consolas", 10)
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.0.0"  # <<< 您目前開發中版本的版本號
+CURRENT_VERSION = "1.0.1"  # <<< 您目前開發中版本的版本號
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
@@ -91,7 +91,7 @@ class MainWindow(tk.Toplevel):
         self.user_groups = user_data.get("groups", [])
         self.initialized_tabs = set()
         self.selected_files = {} # 【新增】用來儲存每個分頁選擇的檔案路徑
-        self.title("樂迦小幫手")
+        self.title(f"樂迦小幫手v{CURRENT_VERSION}")
         self.geometry("700x550")
         self.configure(bg=BG_COLOR)
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
@@ -113,6 +113,21 @@ class MainWindow(tk.Toplevel):
         style.configure("TNotebook.Tab", background=BUTTON_BG_COLOR, foreground=TEXT_COLOR, padding=[10, 5], font=FONT_NORMAL)
         style.map("TNotebook.Tab", background=[("selected", ACCENT_COLOR)], foreground=[("selected", BG_COLOR)])
         style.configure("Custom.TFrame", background=BG_COLOR)
+
+
+        # 建立一個顯示版本號的 Label
+        version_label = tk.Label(
+            self,
+            text=f"版本: v{CURRENT_VERSION}",
+            font=("Microsoft JhengHei", 8),  # 使用小一點的字體
+            bg=BG_COLOR,
+            fg="grey"  # 使用灰色，讓它不那麼顯眼
+        )
+        # 將 Label 放在視窗底部、靠右對齊
+        # 注意: 我們先 pack 底部元件，再 pack 中間的主要元件
+        version_label.pack(side=tk.BOTTOM, anchor="se", padx=10, pady=2)
+
+        # --- 【新增結束】 ---
 
         self.notebook = ttk.Notebook(self, style="TNotebook")
         self.notebook.pack(expand=True, fill="both", padx=10, pady=10)
@@ -138,12 +153,12 @@ class MainWindow(tk.Toplevel):
             "G_Assistant_ERPUsers": {
                 "name": "ERP助理", 
                 "webhook_key": "erp",
-                "welcome_message": "您好！我是您的 ERP 助理，專門處理進銷存、料號或訂單相關問題，請問需要什麼協助嗎？"
+                "welcome_message": "您好！我是您的ERP助手，專門處理進銷存、料號或訂單相關問題，請問需要什麼協助嗎？"
             },
             "G_Assistant_MeetingUsers": {
                 "name": "會議助理", 
                 "webhook_key": "meeting",
-                "welcome_message": "您好，我是會議助理。您可以上傳會議的錄音檔或逐字稿，我能為您產出會議記錄與待辦事項。"
+                "welcome_message": "您好，我是會議助理。您可以上傳會議的錄音檔(mp3,wma)或逐字稿，我能為您產出會議記錄與待辦事項。"
             },
 
         }
@@ -388,7 +403,7 @@ class MainWindow(tk.Toplevel):
 class LoginWindow(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("樂迦小幫手 -  帳號登入"); self.geometry("350x250"); self.resizable(False, False); self.configure(bg=BG_COLOR)
+        self.title(f"樂迦小幫手 -  帳號登入v({CURRENT_VERSION})"); self.geometry("350x250"); self.resizable(False, False); self.configure(bg=BG_COLOR)
         tk.Label(self, text="樂迦小幫手", font=FONT_BOLD, bg=BG_COLOR, fg=ACCENT_COLOR).pack(pady=(20, 10))
         tk.Label(self, text="帳號:", font=FONT_NORMAL, bg=BG_COLOR, fg=TEXT_COLOR).pack(pady=(5,0))
         self.username_entry = tk.Entry(self, width=30, font=FONT_NORMAL, bg=ENTRY_BG_COLOR, fg=TEXT_COLOR, insertbackground=TEXT_COLOR, relief="flat")

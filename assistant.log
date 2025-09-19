@@ -1062,3 +1062,965 @@ C:/Users/leot/Downloads/How_to_Work_with_Resources_and_Production_in_SAP_Busines
 2025-09-17 15:08:08,874 - INFO - User 'leot' querying 'erp': '我拿到揀貨單之後要如何作業?'
 2025-09-17 15:08:38,255 - INFO - Webhook call for 'erp' succeeded.
 2025-09-17 15:12:07,873 - INFO - User 'leot' closed application.
+2025-09-17 15:47:31,153 - INFO - ================ Application Started ================
+2025-09-17 15:47:39,513 - INFO - User 'leot' is attempting to log in.
+2025-09-17 15:47:39,660 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 15:47:47,623 - INFO - User 'leot' closed application.
+2025-09-17 15:48:12,487 - INFO - ================ Application Started ================
+2025-09-17 15:48:18,668 - INFO - User 'leot' is attempting to log in.
+2025-09-17 15:48:18,766 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 15:49:47,808 - INFO - User 'leot' querying 'erp': '收到揀單怎麼辦?'
+2025-09-17 15:50:18,758 - INFO - Received from n8n: {'output': '**收到揀單後的處理流程**\n\n1. **列印揀貨單**  \n   先將系統產生的揀貨單列印出來，方便倉管人員直接使用。  \n   *來源：『撿貨包裝與生產經理操作說明』第\u202f11\u202f頁（紙本揀貨單列印後交給倉管）*\n\n2. **交給倉管進行揀貨**  \n   把列印好的揀貨單交給倉管或揀貨人員，他們根據清單從倉庫挑取商品。  \n   *來源：同上第\u202f11\u202f頁*\n\n3. **揀貨完成後轉成出貨單**  \n   當揀貨人員完成所有商品的挑取後，倉管會將揀貨單的資訊轉成正式的出貨單（Delivery Order），以便後續的物流、發票等流程。  \n   *來源：『庫別儲位建立手冊』第\u202f25\u202f頁（倉管至揀貨清單完成揀貨後，轉成出貨單）*\n\n簡而言之：列印揀貨單 → 交給倉管揀貨 → 揀貨完成後轉成出貨單。'}
+2025-09-17 15:50:33,050 - INFO - User 'leot' closed application.
+2025-09-17 15:52:40,417 - INFO - ================ Application Started ================
+2025-09-17 15:52:48,534 - INFO - User 'leot' is attempting to log in.
+2025-09-17 15:52:48,624 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 15:53:13,808 - INFO - User 'leot' querying 'erp': '我要怎麼做生產發貨?'
+2025-09-17 15:53:30,731 - INFO - Received from n8n: {'output': '**生產發貨（Production Shipment）流程概述**  \n\n1. **開啟「生產發貨」單據**  \n   * 進入「存貨發貨」模組 → 選擇「生產發貨」單據。  \n2. **輸入基本資訊**  \n   * 成品品項、數量、倉庫等。  \n3. **核發手動項目**  \n   * 系統會將手動項目（如人工、工序成本）核發至對應的生產訂單。  \n4. **確認並傳送**  \n   * 輸入完成後，確認資料無誤，傳送至生產訂單。  \n5. **成本過帳**  \n   * *在傳送時*：  \n     * 過帳項目的費用。  \n     * 同日記帳分錄也會過帳資源費用，資源費用會由「資源費用科目」移轉至「相關資源在製品科目」。  \n   * 依資源主檔中「總計標準資源成本」與「進階總帳科目決定規則」計算，實際過帳最多可分為 10 個資源費用科目。  \n6. **完成後檢查**  \n   * 檢查「在製品」帳務是否正確、WIP 科目是否更新。  \n7. **結案**  \n   * 確認完成度後，將單據結案，生產訂單可進入「成品」階段。  \n\n> 以上流程說明來自 SAP B1 的「生產發貨」說明文件（PDF ID：`d83046da-e28e-498f-9a22-8ee651984bd4`）。  \n\n> 若需詳細操作步驟或畫面示意，請參考同一份 PDF 的前後章節。'}
+2025-09-17 15:54:08,291 - INFO - User 'leot' closed application.
+2025-09-17 15:57:09,468 - INFO - ================ Application Started ================
+2025-09-17 15:57:19,572 - INFO - User 'leot' is attempting to log in.
+2025-09-17 15:57:19,694 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 15:58:08,841 - INFO - User 'leot' querying 'policy': '我上班途中撞車了, 我可以請什麼假或申請什麼補償'
+2025-09-17 15:58:31,722 - INFO - Received from n8n: {'output': ''}
+2025-09-17 15:58:44,060 - INFO - User 'leot' closed application.
+2025-09-17 16:09:25,050 - INFO - ================ Application Started ================
+2025-09-17 16:09:32,412 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:09:32,559 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:13:49,492 - INFO - User 'leot' closed application.
+2025-09-17 16:13:52,686 - INFO - ================ Application Started ================
+2025-09-17 16:14:13,969 - INFO - ================ Application Started ================
+2025-09-17 16:14:19,963 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:14:20,068 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:14:28,968 - INFO - User 'leot' closed application.
+2025-09-17 16:15:12,629 - INFO - ================ Application Started ================
+2025-09-17 16:15:18,967 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:15:19,074 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:15:27,000 - INFO - User 'leot' closed application.
+2025-09-17 16:21:57,036 - INFO - ================ Application Started ================
+2025-09-17 16:22:03,198 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:22:03,306 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:22:09,638 - INFO - User 'leot' closed application.
+2025-09-17 16:22:22,601 - INFO - ================ Application Started ================
+2025-09-17 16:22:28,693 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:22:28,789 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:23:09,220 - INFO - User 'leot' querying 'policy': '我上班途中被砍了, 我要怎麼假, 有什麼補償?'
+2025-09-17 16:27:05,667 - INFO - ================ Application Started ================
+2025-09-17 16:27:12,298 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:27:12,431 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:27:56,091 - INFO - User 'leot' querying 'erp': '採購單要改單價怎麼辦?'
+2025-09-17 16:28:21,363 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 16:29:04,318 - INFO - User 'leot' querying 'erp': '採購單要變更怎麼辦?'
+2025-09-17 16:29:34,336 - ERROR - Webhook call for 'erp' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 200, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-17 16:37:29,729 - INFO - User 'leot' querying 'erp': '採購單要變更怎麼辦?'
+2025-09-17 16:37:59,223 - INFO - User 'leot' closed application.
+2025-09-17 16:38:04,731 - INFO - ================ Application Started ================
+2025-09-17 16:38:10,521 - INFO - User 'leot' is attempting to log in.
+2025-09-17 16:38:10,641 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 16:38:35,477 - INFO - User 'leot' querying 'erp': '採購單要變更要怎麼辦?'
+2025-09-17 16:38:59,848 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 16:42:23,130 - INFO - User 'leot' querying 'policy': '採購單要變更要怎麼做?'
+2025-09-17 16:42:45,600 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 16:45:14,053 - INFO - User 'leot' querying 'policy': '我上班途中皮砍了, 公司有什麼補償, 可以請假嗎?'
+2025-09-17 16:45:43,209 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 16:58:50,186 - INFO - User 'leot' querying 'policy': '我上班途中被砍了, 公司有什麼補償, 可以請假嗎?'
+2025-09-17 16:59:13,448 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:01:45,311 - INFO - User 'leot' querying 'policy': '我上班途中被砍了, 公司有什麼補償, 可以請假嗎?'
+2025-09-17 17:02:12,824 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:03:22,396 - INFO - User 'leot' querying 'policy': '那我被砍到死了,有什補助?'
+2025-09-17 17:03:43,976 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:05:30,937 - INFO - User 'leot' querying 'policy': '那如果我被性騷擾怎麼辦?'
+2025-09-17 17:05:44,402 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:06:46,138 - INFO - User 'leot' querying 'policy': '如果我是性騷擾其它員工會怎樣?'
+2025-09-17 17:07:07,628 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:07:40,621 - INFO - User 'leot' querying 'policy': '那我可以申訴嗎?'
+2025-09-17 17:07:59,174 - INFO - Webhook call for 'policy' succeeded.
+2025-09-17 17:09:15,998 - INFO - User 'leot' closed application.
+2025-09-18 08:27:57,134 - INFO - ================ Application Started ================
+2025-09-18 08:28:04,241 - INFO - User 'leot' is attempting to log in.
+2025-09-18 08:28:04,399 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 08:28:28,358 - INFO - User 'leot' closed application.
+2025-09-18 08:29:11,065 - INFO - ================ Application Started ================
+2025-09-18 08:29:17,693 - INFO - User 'leot' is attempting to log in.
+2025-09-18 08:29:17,788 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 08:30:03,265 - INFO - User 'leot' closed application.
+2025-09-18 11:38:33,965 - INFO - ================ Application Started ================
+2025-09-18 11:38:40,848 - INFO - User 'leot' is attempting to log in.
+2025-09-18 11:38:40,979 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 11:38:58,579 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/新人到職設定及安裝.pdf
+2025-09-18 11:38:59,045 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 276, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-18 13:05:21,774 - INFO - User 'leot' closed application.
+2025-09-18 13:05:27,740 - INFO - ================ Application Started ================
+2025-09-18 13:05:33,860 - INFO - User 'leot' is attempting to log in.
+2025-09-18 13:05:33,964 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 13:05:51,631 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20250424回簽.pdf
+2025-09-18 13:05:52,200 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 297, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-18 13:09:22,093 - INFO - User 'leot' closed application.
+2025-09-18 13:09:29,869 - INFO - ================ Application Started ================
+2025-09-18 13:09:37,561 - INFO - User 'leot' is attempting to log in.
+2025-09-18 13:09:37,663 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 13:09:54,364 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/資訊需求單-ITR250200014.pdf
+2025-09-18 13:09:57,239 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-18 15:43:23,190 - INFO - User 'leot' closed application.
+2025-09-18 15:45:35,997 - INFO - ================ Application Started ================
+2025-09-18 15:45:47,920 - INFO - User 'leot' is attempting to log in.
+2025-09-18 15:45:48,053 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 15:46:33,356 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-18 15:47:06,604 - ERROR - Webhook call for '會議助理' failed: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 299, in perform_assistant_query
+    answer = response_data.get("output", "n8n 回應中未找到 'output' 欄位。")
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-09-18 15:51:39,096 - INFO - User 'leot' closed application.
+2025-09-18 15:51:46,853 - INFO - ================ Application Started ================
+2025-09-18 15:51:52,723 - INFO - User 'leot' is attempting to log in.
+2025-09-18 15:51:52,838 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 15:52:11,642 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-18 15:52:44,964 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-18 16:29:07,685 - INFO - User 'leot' closed application.
+2025-09-18 16:29:15,143 - INFO - ================ Application Started ================
+2025-09-18 16:29:21,649 - INFO - User 'leot' is attempting to log in.
+2025-09-18 16:29:21,750 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 16:30:06,674 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20230912固資流程會議記錄.pdf
+2025-09-18 16:30:20,784 - ERROR - Webhook call for '會議助理' failed: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 299, in perform_assistant_query
+    answer = response_data.get("output", "n8n 回應中未找到 'output' 欄位。")
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-09-18 16:37:17,985 - INFO - User 'leot' closed application.
+2025-09-18 16:37:24,458 - INFO - ================ Application Started ================
+2025-09-18 16:37:31,405 - INFO - User 'leot' is attempting to log in.
+2025-09-18 16:37:31,511 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 16:37:53,147 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20230919-固資藍圖驗證第二次.pdf
+2025-09-18 16:38:05,854 - ERROR - Webhook call for '會議助理' failed: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 299, in perform_assistant_query
+    answer = response_data.get("output", "n8n 回應中未找到 'output' 欄位。")
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-09-18 16:48:01,234 - INFO - User 'leot' closed application.
+2025-09-18 16:51:22,831 - INFO - ================ Application Started ================
+2025-09-18 16:51:29,475 - INFO - User 'leot' is attempting to log in.
+2025-09-18 16:51:29,634 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 16:51:44,249 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20231016生產流程確認會議記錄.pdf
+2025-09-18 16:51:51,429 - ERROR - Webhook call for '會議助理' failed: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 299, in perform_assistant_query
+    answer = response_data.get("output", "n8n 回應中未找到 'output' 欄位。")
+             ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-09-18 16:55:26,926 - INFO - User 'leot' closed application.
+2025-09-18 16:55:38,970 - INFO - ================ Application Started ================
+2025-09-18 16:55:45,846 - INFO - User 'leot' is attempting to log in.
+2025-09-18 16:55:45,940 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 16:55:58,747 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20231013_採購流程驗証會議_1013.pdf
+2025-09-18 16:56:05,499 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-18 16:58:44,251 - INFO - User 'leot' closed application.
+2025-09-18 16:58:54,594 - INFO - ================ Application Started ================
+2025-09-18 16:59:16,206 - INFO - User 'leot' is attempting to log in.
+2025-09-18 16:59:16,317 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 16:59:40,076 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20230831-財務藍圖驗証會議.pdf
+2025-09-18 16:59:54,749 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-18 17:04:21,899 - INFO - User 'leot' closed application.
+2025-09-18 17:06:34,054 - INFO - ================ Application Started ================
+2025-09-18 17:06:40,283 - INFO - User 'leot' is attempting to log in.
+2025-09-18 17:06:40,394 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-18 17:06:52,349 - INFO - User 'leot' querying 'meeting': '' with file: Z:/共用文件/資訊處/ERP/會議記錄/20230912固資流程會議記錄.pdf
+2025-09-18 17:06:59,911 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-18 17:07:39,323 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-18 17:08:09,927 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 08:26:18,204 - INFO - ================ Application Started ================
+2025-09-19 08:26:29,900 - INFO - User 'leot' is attempting to log in.
+2025-09-19 08:26:30,025 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-19 08:26:47,400 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-19 08:27:19,167 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 09:03:05,996 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-19 09:03:36,384 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 09:08:40,858 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-19 09:09:40,906 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 298, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 09:16:23,494 - INFO - User 'leot' querying 'erp': '為何銷售訂單產生撿貨清單會直接變成己核發' with file: None
+2025-09-19 09:16:23,537 - ERROR - Webhook call for 'ERP助理' failed: 404 Client Error: Not Found for url: http://192.168.88.43:5678/webhook/ERPAgentWithFile
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 297, in perform_assistant_query
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://192.168.88.43:5678/webhook/ERPAgentWithFile
+2025-09-19 09:19:52,256 - INFO - User 'leot' querying 'erp': '為何銷售訂單產生撿貨清單會直接變成己核發' with file: None
+2025-09-19 09:20:32,265 - ERROR - Webhook call for 'ERP助理' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 292, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers=headers, timeout=40)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+2025-09-19 09:25:24,891 - INFO - User 'leot' querying 'erp': '為何銷售訂單產生撿貨清單會直接變成己核發' with file: None
+2025-09-19 09:25:47,262 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 09:27:51,787 - INFO - User 'leot' querying 'erp': '但是否是設定原因造成銷售訂單轉揀貨單時變成自動核發' with file: None
+2025-09-19 09:28:11,233 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 09:29:52,337 - INFO - User 'leot' querying 'erp': '自動發貨AUTO-ISSUE設定在哪?' with file: None
+2025-09-19 09:30:32,357 - ERROR - Webhook call for 'ERP助理' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 292, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers=headers, timeout=40)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+2025-09-19 09:37:13,557 - INFO - User 'leot' querying 'erp': '自動發貨AUTO-ISSUE設定在哪?' with file: None
+2025-09-19 09:37:53,570 - ERROR - Webhook call for 'ERP助理' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 292, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers=headers, timeout=50)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=40)
+2025-09-19 09:38:34,661 - INFO - User 'leot' closed application.
+2025-09-19 09:38:37,869 - INFO - ================ Application Started ================
+2025-09-19 09:38:54,318 - INFO - ================ Application Started ================
+2025-09-19 09:39:00,645 - INFO - User 'leot' is attempting to log in.
+2025-09-19 09:39:00,780 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-19 09:39:05,213 - INFO - User 'leot' querying 'erp': '自動發貨AUTO-ISSUE設定在哪?' with file: None
+2025-09-19 09:39:55,268 - ERROR - Webhook call for 'ERP助理' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=50)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=50)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 292, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers=headers, timeout=50)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=50)
+2025-09-19 09:49:19,485 - INFO - User 'leot' closed application.
+2025-09-19 09:49:22,073 - INFO - ================ Application Started ================
+2025-09-19 09:49:32,331 - INFO - User 'leot' is attempting to log in.
+2025-09-19 09:49:32,447 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-19 09:50:00,075 - INFO - User 'leot' querying 'erp': '如何設定自動發貨?' with file: None
+2025-09-19 09:50:02,374 - ERROR - Webhook call for 'ERP助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 09:52:43,030 - INFO - User 'leot' querying 'erp': '如何設定自動發貨?' with file: None
+2025-09-19 09:53:22,774 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 09:54:27,519 - INFO - User 'leot' querying 'erp': '為何某些倉庫會自動貨?' with file: None
+2025-09-19 09:54:53,710 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 10:06:08,647 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Documents/20231024-AR發票.mp4
+2025-09-19 10:06:38,391 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 10:11:25,864 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-19 10:11:29,133 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 10:15:34,612 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-19 10:15:37,872 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 10:17:39,668 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-19 10:17:42,912 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 10:29:20,388 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-19 10:29:23,505 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 328, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-19 10:33:13,884 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-19 10:35:23,950 - ERROR - Webhook call for '會議助理' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=130)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=130)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 316, in perform_assistant_query
+    response = requests.post(webhook_url, files=files, data=payload, timeout=130)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=130)
+2025-09-19 10:51:59,290 - INFO - User 'leot' querying 'erp': '如何設定自動發貨?' with file: None
+2025-09-19 10:52:28,285 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 10:53:07,897 - INFO - User 'leot' querying 'erp': '為何某些倉庫會自動發貨?' with file: None
+2025-09-19 10:53:49,282 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-19 11:20:16,858 - INFO - User 'leot' closed application.
+2025-09-19 11:20:20,725 - INFO - ================ Application Started ================
+2025-09-19 13:22:49,186 - INFO - ================ Application Started ================
+2025-09-19 13:23:31,599 - INFO - ================ Application Started ================
+2025-09-19 13:23:41,279 - INFO - User 'leot' is attempting to log in.
+2025-09-19 13:23:41,406 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-19 13:23:48,037 - INFO - User 'leot' closed application.
+2025-09-19 13:28:11,575 - INFO - ================ Application Started ================
+2025-09-19 13:28:18,360 - INFO - User 'leot' is attempting to log in.
+2025-09-19 13:28:18,456 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
