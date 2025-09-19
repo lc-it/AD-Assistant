@@ -714,3 +714,351 @@ requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5
 2025-09-16 16:59:12,211 - INFO - User 'leot' querying 'policy': '交際費管理辦法中是否有關定參與者上層主管也審核?'
 2025-09-16 16:59:39,345 - INFO - Webhook call for 'policy' succeeded.
 2025-09-16 17:10:54,649 - INFO - User 'leot' closed application.
+2025-09-17 11:50:50,515 - INFO - ================ Application Started ================
+2025-09-17 12:56:11,444 - INFO - ================ Application Started ================
+2025-09-17 12:56:17,940 - INFO - User 'leot' is attempting to log in.
+2025-09-17 12:56:18,132 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 12:56:26,937 - INFO - User 'leot' closed application.
+2025-09-17 12:58:20,912 - INFO - ================ Application Started ================
+2025-09-17 12:58:43,142 - INFO - ================ Application Started ================
+2025-09-17 12:59:51,961 - INFO - ================ Application Started ================
+2025-09-17 13:00:35,899 - INFO - ================ Application Started ================
+2025-09-17 13:01:17,071 - INFO - ================ Application Started ================
+2025-09-17 13:05:19,767 - INFO - ================ Application Started ================
+2025-09-17 13:05:30,910 - INFO - User 'leot' is attempting to log in.
+2025-09-17 13:05:30,999 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 13:05:40,741 - INFO - User 'leot' closed application.
+2025-09-17 13:06:13,164 - INFO - ================ Application Started ================
+2025-09-17 13:06:20,348 - INFO - User 'leot' is attempting to log in.
+2025-09-17 13:06:20,592 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 13:06:24,983 - INFO - User 'leot' closed application.
+2025-09-17 13:07:00,188 - INFO - ================ Application Started ================
+2025-09-17 13:07:06,809 - INFO - User 'leot' is attempting to log in.
+2025-09-17 13:07:06,947 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 13:07:33,808 - INFO - User 'leot' closed application.
+2025-09-17 13:09:08,739 - INFO - ================ Application Started ================
+2025-09-17 13:09:14,918 - INFO - User 'leot' is attempting to log in.
+2025-09-17 13:09:15,113 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 13:09:30,652 - INFO - User 'leot' closed application.
+2025-09-17 13:50:49,738 - INFO - ================ Application Started ================
+2025-09-17 13:51:02,557 - INFO - User 'leot' is attempting to log in.
+2025-09-17 13:51:02,684 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-17 13:51:35,396 - INFO - User 'leot' querying 'erp': '請問我要收一個貨要怎麼做?'
+2025-09-17 13:51:59,194 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 13:53:53,721 - INFO - User 'leot' querying 'erp': '採買的貨送到了要怎麼處理?'
+2025-09-17 13:54:11,740 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 13:55:07,041 - INFO - User 'leot' querying 'erp': '請說明開立採購單之動作'
+2025-09-17 13:55:26,427 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 13:55:52,311 - INFO - User 'leot' querying 'erp': '採購收貨業為何?'
+2025-09-17 13:56:16,878 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 13:56:51,113 - INFO - User 'leot' querying 'erp': '建立退貨請求單的步驟'
+2025-09-17 13:57:12,550 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 13:58:06,760 - INFO - User 'leot' querying 'erp': '我要做採購退貨要怎麼做?'
+2025-09-17 13:58:36,777 - ERROR - Webhook call for 'erp' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 210, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-17 14:00:05,086 - INFO - User 'leot' querying 'erp': '我要做採購退貨要怎麼做'
+2025-09-17 14:00:32,319 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 14:04:58,524 - INFO - User 'leot' querying 'erp': '我要做採購退貨要由誰起?'
+2025-09-17 14:05:18,557 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 14:08:17,049 - INFO - User 'leot' querying 'erp': '我要使用MRP計算要如何啟動?'
+2025-09-17 14:08:41,717 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 14:09:36,617 - INFO - User 'leot' querying 'erp': '信用額度控管方式?'
+2025-09-17 14:09:47,768 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 14:10:28,669 - INFO - User 'leot' querying 'erp': '簽核流程設定方式為何?'
+2025-09-17 14:10:58,679 - ERROR - Webhook call for 'erp' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 210, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-17 14:11:08,134 - INFO - User 'leot' querying 'erp': '簽核流程設定方式為何?'
+2025-09-17 14:11:26,672 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 14:54:38,586 - INFO - User 'leot' querying 'erp': '我拿到揀貨單之後要如何作業?'
+2025-09-17 14:55:08,619 - ERROR - Webhook call for 'erp' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 210, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-17 15:02:58,773 - INFO - User 'leot' querying 'erp': '資源及工時表可以一起使用?'
+2025-09-17 15:03:28,799 - ERROR - Webhook call for 'erp' failed: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 210, in perform_assistant_query
+    response = requests.post(webhook_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5678): Read timed out. (read timeout=30)
+2025-09-17 15:03:35,535 - INFO - User 'leot' querying 'erp': 'C:/Users/leot/Downloads/SAP B1人力資源.pdf
+C:/Users/leot/Downloads/SAP B1生產模組.pdf
+C:/Users/leot/Downloads/SAP B1存貨模組part1.pdf
+C:/Users/leot/Downloads/SAP B1存貨模組part2.pdf
+C:/Users/leot/Downloads/How_to_Work_with_Resources_and_Production_in_SAP_Business_One.pdf'
+2025-09-17 15:03:49,342 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 15:03:56,385 - INFO - User 'leot' querying 'erp': '資源及工時表可以一起使用?'
+2025-09-17 15:04:22,016 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 15:06:19,299 - INFO - User 'leot' querying 'erp': '工時表的來源可以直接是人力資源使用量?'
+2025-09-17 15:06:37,340 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 15:07:20,562 - INFO - User 'leot' querying 'erp': '工時表資料來源為何?'
+2025-09-17 15:07:33,828 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 15:08:08,874 - INFO - User 'leot' querying 'erp': '我拿到揀貨單之後要如何作業?'
+2025-09-17 15:08:38,255 - INFO - Webhook call for 'erp' succeeded.
+2025-09-17 15:12:07,873 - INFO - User 'leot' closed application.
