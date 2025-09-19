@@ -1,0 +1,16 @@
+# Python 暫存檔
+__pycache__/
+*.pyc
+
+# Python 虛擬環境
+venv/
+.venv/
+
+# PyInstaller 封裝時產生的資料夾
+dist/
+build/
+*.spec
+
+# IDE/編輯器設定檔
+.idea/
+.vscode/
