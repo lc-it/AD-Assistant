@@ -2024,3 +2024,5 @@ requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5
 2025-09-19 13:28:11,575 - INFO - ================ Application Started ================
 2025-09-19 13:28:18,360 - INFO - User 'leot' is attempting to log in.
 2025-09-19 13:28:18,456 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-19 13:32:58,715 - INFO - User 'leot' closed application.
+2025-09-19 14:20:57,043 - INFO - ================ Application Started ================

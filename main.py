@@ -9,6 +9,7 @@ import requests
 import json
 import threading
 import logging
+import requests # 【新增】
 from PIL import Image, ImageTk
 from ldap3 import Server, Connection, ALL, Tls, SUBTREE
 from packaging import version # 【新增】用於比較版本號
@@ -25,7 +26,7 @@ FONT_MONO = ("Consolas", 10)
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.0.1"  # <<< 您目前開發中版本的版本號
+CURRENT_VERSION = "1.0.2"  # <<< 您目前開發中版本的版本號
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
@@ -50,6 +51,81 @@ AD_PORT = 636
 # 【修改點】啟用 SSL/TLS 加密連線
 USE_SSL = True
 
+# 【修改】使用 requests 來檢查更新
+def check_for_updates():
+    """檢查應用程式是否有新版本"""
+    print(f"目前版本: {CURRENT_VERSION}")
+    print(f"正在檢查更新，來源: {UPDATE_INFO_URL}")
+
+    try:
+        # 1. 透過 HTTP GET 請求讀取遠端的版本資訊檔
+        response = requests.get(UPDATE_INFO_URL, timeout=5) # 設定 5 秒超時
+        response.raise_for_status() # 如果請求失敗 (如 404)，會拋出錯誤
+        update_info = response.json()
+        
+        latest_version = update_info.get("latest_version")
+        download_url = update_info.get("download_url")
+        release_notes = update_info.get("release_notes", "無")
+
+        print(f"最新版本: {latest_version}")
+
+        # 2. 比較版本號 (這部分不變)
+        if version.parse(latest_version) > version.parse(CURRENT_VERSION):
+            print("發現新版本！")
+            if messagebox.askyesno(
+                "發現新版本",
+                f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n是否要立即下載並更新？"
+            ):
+                perform_update(download_url)
+        else:
+            print("目前已是最新版本。")
+
+    except requests.exceptions.RequestException as e:
+        print(f"警告：無法連線至更新伺服器，略過更新檢查。錯誤: {e}")
+    except Exception as e:
+        print(f"檢查更新時發生未預期的錯誤: {e}")
+
+
+# 【修改】使用 requests 來下載新版 EXE
+def perform_update(download_url):
+    """執行下載和更新"""
+    try:
+        current_path = os.path.realpath(sys.executable)
+        new_file_path = current_path + ".new"
+        
+        print(f"正在從 {download_url} 下載新版本至 {new_file_path}...")
+        
+        # 5. 透過 requests 下載檔案
+        with requests.get(download_url, stream=True) as r:
+            r.raise_for_status()
+            with open(new_file_path, 'wb') as f:
+                for chunk in r.iter_content(chunk_size=8192): 
+                    f.write(chunk)
+        
+        print("下載完成。")
+        
+        # 6. 建立 updater.bat (這部分不變)
+        updater_script_path = os.path.join(os.path.dirname(current_path), "updater.bat")
+        script_content = f"""
+@echo off
+echo 更新中，請稍候...
+timeout /t 2 /nobreak
+move /Y "{current_path}" "{current_path}.old"
+move /Y "{new_file_path}" "{current_path}"
+echo 更新完成，正在重新啟動應用程式...
+start "" "{current_path}"
+del "{updater_script_path}"
+"""
+        with open(updater_script_path, "w") as f:
+            f.write(script_content)
+            
+        # 7. 啟動批次檔並關閉自己 (這部分不變)
+        print("啟動更新程序並關閉主程式...")
+        subprocess.Popen(updater_script_path, shell=True)
+        sys.exit(0)
+
+    except Exception as e:
+        messagebox.showerror("更新失敗", f"更新過程中發生錯誤：\n{e}")
 
 def parse_group_name(dn_string):
     try: return dn_string.split(',')[0].split('=')[1]

@@ -1,5 +1,5 @@
 {
-  "latest_version": "1.0.1",
+  "latest_version": "1.0.2",
   "download_url": "https://github.com/lc-it/AD-Assistant/releases/download/v1.0.0/MyAssistant.exe",
-  "release_notes": "修改歡迎詞！"
+  "release_notes": "新增版本控制！"
 }
