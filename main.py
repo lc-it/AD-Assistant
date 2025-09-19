@@ -25,8 +25,8 @@ FONT_MONO = ("Consolas", 10)
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.3.2"  # <<< 您目前開發中版本的版本號
-UPDATE_INFO_URL = r"\\FileServer\AppUpdates\MyAssistant\version.json" # <<< 版本資訊檔的路徑
+CURRENT_VERSION = "1.0.0"  # <<< 您目前開發中版本的版本號
+UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
 
