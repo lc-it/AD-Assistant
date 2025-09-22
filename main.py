@@ -32,7 +32,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # --- 全域設定 ---
-CURRENT_VERSION = "1.0.9"
+CURRENT_VERSION = "1.1.1"
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json"
 APP_NAME = "MyAssistant.exe"
 ASSISTANT_WEBHOOKS = {
