@@ -36,6 +36,8 @@ CURRENT_VERSION = "1.0.7"
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json"
 APP_NAME = "MyAssistant.exe"
 
+
+
 ASSISTANT_WEBHOOKS = {
     "policy": "http://192.168.88.43:5678/webhook/OpenWebUIAdminAgent",
     "erp": "http://192.168.88.43:5678/webhook/ERPAgentWithFile",
