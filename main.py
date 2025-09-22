@@ -32,7 +32,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # --- 全域設定 ---
-CURRENT_VERSION = "1.0.8"
+CURRENT_VERSION = "1.0.9"
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json"
 APP_NAME = "MyAssistant.exe"
 ASSISTANT_WEBHOOKS = {
@@ -41,6 +41,7 @@ ASSISTANT_WEBHOOKS = {
     "meeting": "http://192.168.88.43:5678/webhook/MeetingAgentWithFile",
     "it": "YOUR_IT_ASSISTANT_WEBHOOK_URL",
 }
+
 
 # --- AD 設定 ---
 AD_SERVER = '192.168.88.12'
