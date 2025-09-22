@@ -2166,3 +2166,8 @@ NameError: name 'os' is not defined. Did you forget to import 'os'?
 2025-09-22 14:20:08,930 - INFO - User 'leot' is attempting to log in.
 2025-09-22 14:20:09,043 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
 2025-09-22 14:20:12,800 - INFO - User 'leot' closed application.
+2025-09-22 16:55:09,273 - INFO - ================ Application Started ================
+2025-09-22 16:55:33,293 - INFO - ================ Application Started ================
+2025-09-22 16:55:41,179 - INFO - User 'leot' is attempting to log in.
+2025-09-22 16:55:41,299 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-22 16:55:47,420 - INFO - User 'leot' closed application.
