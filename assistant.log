@@ -2136,3 +2136,29 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2025-09-22 13:45:21,668 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
 2025-09-22 13:45:56,498 - INFO - Webhook call for '會議助理' succeeded.
 2025-09-22 13:46:29,596 - INFO - User 'leot' closed application.
+2025-09-22 14:06:00,307 - INFO - ================ Application Started ================
+2025-09-22 14:06:50,141 - INFO - ================ Application Started ================
+2025-09-22 14:07:04,459 - INFO - User 'leot' is attempting to log in.
+2025-09-22 14:07:04,593 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-22 14:07:09,373 - ERROR - Error loading icon: name 'os' is not defined
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 29, in resource_path
+    base_path = sys._MEIPASS
+                ^^^
+NameError: name 'sys' is not defined. Did you forget to import 'sys'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 189, in __init__
+    send_icon_image = Image.open(resource_path("send_icon.png")).resize((20, 20), Image.Resampling.LANCZOS)
+                                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 32, in resource_path
+    base_path = os.path.abspath(".")
+                ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+2025-09-22 14:07:12,114 - INFO - User 'leot' closed application.
+2025-09-22 14:07:36,490 - INFO - ================ Application Started ================
+2025-09-22 14:07:43,509 - INFO - User 'leot' is attempting to log in.
+2025-09-22 14:07:43,657 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-22 14:07:55,542 - INFO - User 'leot' closed application.

@@ -4,7 +4,7 @@ from tkinter import filedialog # 【新增或確保這一行存在】
 import webbrowser # 【新增】用於開啟下載連結
 import mimetypes  # 【新增】用於辨識檔案類型
 import ssl      # 【新增】明確引入 ssl 模組
-import ssl
+import os
 import requests
 import json
 import threading
@@ -21,12 +21,23 @@ FONT_NORMAL = ("Microsoft JhengHei", 10)
 FONT_BOLD = ("Microsoft JhengHei", 12, "bold")
 FONT_MONO = ("Consolas", 10)
 
+# 【新增】這個函式用來取得資源檔案的絕對路徑，無論是在開發模式還是 PyInstaller EXE 模式
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller 會建立一個暫存資料夾，並將路徑儲存在 _MEIPASS 中
+        base_path = sys._MEIPASS
+    except Exception:
+        # 在開發模式中，sys._MEIPASS 不存在，所以我們使用檔案的所在目錄
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 # 全域設定
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.0.4"  # <<< 您目前開發中版本的版本號
+CURRENT_VERSION = "1.0.5"  # <<< 您目前開發中版本的版本號
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
@@ -174,14 +185,15 @@ class MainWindow(tk.Toplevel):
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
         try:
-            # 嘗試載入發送按鈕的圖示
-            send_icon_image = Image.open("send_icon.png").resize((20, 20), Image.Resampling.LANCZOS)
+            # 【修改】使用 resource_path() 來取得圖示的正確路徑
+            send_icon_image = Image.open(resource_path("send_icon.png")).resize((20, 20), Image.Resampling.LANCZOS)
             self.send_icon = ImageTk.PhotoImage(send_icon_image)
-            
-            # 嘗試載入助理的頭像圖示
-            avatar_image = Image.open("avatar.png").resize((40, 40), Image.Resampling.LANCZOS)
+
+            # 【修改】使用 resource_path() 來取得圖示的正確路徑
+            avatar_image = Image.open(resource_path("avatar.png")).resize((40, 40), Image.Resampling.LANCZOS)
             self.avatar_icon = ImageTk.PhotoImage(avatar_image)
-            
+
+           
         except FileNotFoundError as e:
             # 如果找不到圖示檔案，則將圖示變數設為 None，並記錄警告
             self.send_icon, self.avatar_icon = None, None
