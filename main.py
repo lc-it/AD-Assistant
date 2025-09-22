@@ -26,7 +26,7 @@ FONT_MONO = ("Consolas", 10)
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.0.3"  # <<< 您目前開發中版本的版本號
+CURRENT_VERSION = "1.0.4"  # <<< 您目前開發中版本的版本號
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
@@ -174,14 +174,24 @@ class MainWindow(tk.Toplevel):
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
         try:
+            # 嘗試載入發送按鈕的圖示
             send_icon_image = Image.open("send_icon.png").resize((20, 20), Image.Resampling.LANCZOS)
             self.send_icon = ImageTk.PhotoImage(send_icon_image)
-            # 重新載入頭像
+            
+            # 嘗試載入助理的頭像圖示
             avatar_image = Image.open("avatar.png").resize((40, 40), Image.Resampling.LANCZOS)
             self.avatar_icon = ImageTk.PhotoImage(avatar_image)
+            
         except FileNotFoundError as e:
+            # 如果找不到圖示檔案，則將圖示變數設為 None，並記錄警告
             self.send_icon, self.avatar_icon = None, None
-            logging.warning(f"{e.filename} not found.")
+            messagebox.showwarning("資源遺失", f"找不到必要的圖示檔案：{e.filename}\n部分圖示將無法顯示。")
+            logging.warning(f"Icon file not found: {e.filename}")
+        except Exception as e:
+            # 處理其他可能的錯誤，例如圖片檔案損毀
+            self.send_icon, self.avatar_icon = None, None
+            messagebox.showerror("資源錯誤", f"載入圖示時發生錯誤：{e}")
+            logging.error(f"Error loading icon: {e}", exc_info=True)
 
         tk.Label(self, text=f"歡迎, {self.username}！", font=FONT_BOLD, bg=BG_COLOR, fg=ACCENT_COLOR).pack(pady=10)
         
@@ -409,7 +419,7 @@ class MainWindow(tk.Toplevel):
                     print(f"準備傳送的 payload (data): {payload}")
                     print(f"準備傳送的 files 結構: ('{filename}', file_object, '{content_type}')")
                     
-                    response = requests.post(webhook_url, files=files, data=payload, timeout=180)
+                    response = requests.post(webhook_url, files=files, data=payload, timeout=300)
 
             else: # 如果沒有檔案
                 print("沒有偵測到檔案，將作為純文字請求發送。")

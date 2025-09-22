@@ -2026,3 +2026,113 @@ requests.exceptions.ReadTimeout: HTTPConnectionPool(host='192.168.88.43', port=5
 2025-09-19 13:28:18,456 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
 2025-09-19 13:32:58,715 - INFO - User 'leot' closed application.
 2025-09-19 14:20:57,043 - INFO - ================ Application Started ================
+2025-09-22 13:09:40,521 - INFO - ================ Application Started ================
+2025-09-22 13:09:46,783 - INFO - User 'leot' is attempting to log in.
+2025-09-22 13:09:46,941 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-22 13:10:05,799 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/20231024-AR發票.mp3
+2025-09-22 13:13:18,038 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-22 13:13:55,790 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/TEST.pdf
+2025-09-22 13:14:16,861 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-22 13:25:29,572 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:25:29,850 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 434, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-22 13:37:13,772 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:37:14,026 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 434, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-22 13:38:07,997 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Downloads/TEST.pdf
+2025-09-22 13:38:08,323 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 434, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-22 13:39:42,857 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:39:43,100 - ERROR - Webhook call for '會議助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 434, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-22 13:41:28,722 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:41:36,338 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-22 13:42:53,397 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:43:38,269 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-22 13:45:21,668 - INFO - User 'leot' querying 'meeting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-22 13:45:56,498 - INFO - Webhook call for '會議助理' succeeded.
+2025-09-22 13:46:29,596 - INFO - User 'leot' closed application.
