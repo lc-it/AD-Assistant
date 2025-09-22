@@ -26,7 +26,7 @@ FONT_MONO = ("Consolas", 10)
 
 # 版本與更新設定
 # 【新增】版本與更新設定
-CURRENT_VERSION = "1.0.2"  # <<< 您目前開發中版本的版本號
+CURRENT_VERSION = "1.0.3"  # <<< 您目前開發中版本的版本號
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json" # <<< 版本資訊檔的路徑
 APP_NAME = "MyAssistant.exe" # <<< 您最終產生的 EXE 檔名
 
@@ -79,6 +79,7 @@ def check_for_updates():
                 perform_update(download_url)
         else:
             print("目前已是最新版本。")
+
 
     except requests.exceptions.RequestException as e:
         print(f"警告：無法連線至更新伺服器，略過更新檢查。錯誤: {e}")
