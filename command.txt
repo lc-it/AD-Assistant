@@ -1,1 +1,1 @@
-pyinstaller --onefile --windowed --name="MyAssistant" --icon="app_icon.ico" --add-data "avatar.png;." --add-data "send_icon.png;." main.py
+pyinstaller --windowed --name="MyAssistant" --icon="app_icon.ico" --add-data "avatar.png;." --add-data "send_icon.png;." main.py
