@@ -70,12 +70,12 @@ def check_for_updates():
             print("發現新版本！")
             if messagebox.askyesno(
                 "發現新版本",
-                f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n請下載更新!"
+                f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n請下載並更新"
             ):
-                perform_update(download_url)
-            
-        #else:
-        #    print("目前已是最新版本。")
+                #perform_update(download_url)
+                print("請聯絡管理員")
+        else:
+            print("目前已是最新版本。")
     except requests.exceptions.RequestException as e:
         print(f"警告：無法連線至更新伺服器，略過更新檢查。錯誤: {e}")
     except Exception as e:
@@ -83,24 +83,22 @@ def check_for_updates():
 
 def perform_update(download_url):
     """執行下載和更新"""
-    print("請聯絡系統管理員。")
-    #
-    #try:
-    #    current_path = os.path.realpath(sys.executable)
-    #    new_file_path = current_path + ".new"
+    try:
+        current_path = os.path.realpath(sys.executable)
+        new_file_path = current_path + ".new"
         
-    #   print(f"正在從 {download_url} 下載新版本至 {new_file_path}...")
-    #    
-    #    with requests.get(download_url, stream=True) as r:
-    #        r.raise_for_status()
-    #        with open(new_file_path, 'wb') as f:
-    #            for chunk in r.iter_content(chunk_size=8192): 
-    #                f.write(chunk)
+        print(f"正在從 {download_url} 下載新版本至 {new_file_path}...")
         
-    #    print("下載完成。")
+        with requests.get(download_url, stream=True) as r:
+            r.raise_for_status()
+            with open(new_file_path, 'wb') as f:
+                for chunk in r.iter_content(chunk_size=8192): 
+                    f.write(chunk)
         
-    #    updater_script_path = os.path.join(os.path.dirname(current_path), "updater.bat")
-    #    script_content = f"""
+        print("下載完成。")
+        
+        updater_script_path = os.path.join(os.path.dirname(current_path), "updater.bat")
+        script_content = f"""
 @echo off
 echo 更新中，請稍候...
 timeout /t 2 /nobreak
@@ -215,7 +213,7 @@ class MainWindow(tk.Toplevel):
             },
             "G_Assistant_MeetingUsers": {
                 "name": "會議助理", "webhook_key": "meeting",
-                "welcome_message": "您好，我是會議助理。您可以上傳會議的錄音檔(mp3,mp4)或逐字稿，我能為您產出會議記錄與待辦事項。"
+                "welcome_message": "您好，我是會議助理。您可以上傳會議的錄音檔(mp3,wma等錄音檔)或逐字稿，我能為您產出會議記錄與待辦事項。"
             },
         }
         for group, info in ASSISTANT_MAPPING.items():
