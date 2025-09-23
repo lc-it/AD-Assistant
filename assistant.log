@@ -2173,3 +2173,75 @@ NameError: name 'os' is not defined. Did you forget to import 'os'?
 2025-09-22 16:55:47,420 - INFO - User 'leot' closed application.
 2025-09-23 08:50:49,779 - INFO - ================ Application Started ================
 2025-09-23 08:51:20,050 - INFO - ================ Application Started ================
+2025-09-23 10:14:44,056 - INFO - ================ Application Started ================
+2025-09-23 10:14:51,116 - INFO - User 'leot' is attempting to log in.
+2025-09-23 10:14:51,234 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-23 10:15:42,590 - INFO - User 'leot' querying 'policy': '我偷了一個機密檔案會怎麼樣?' with file: None
+2025-09-23 10:16:09,679 - INFO - Webhook call for '行政助理' succeeded.
+2025-09-23 10:22:08,821 - INFO - User 'leot' querying 'policy': '我想離職, 目前己到職2年半, 今天提出申請, 什麼時候可以離職?' with file: None
+2025-09-23 10:22:43,122 - ERROR - Webhook call for '行政助理' failed: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 362, in perform_assistant_query
+    response_data = response.json()
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-09-23 10:23:30,319 - INFO - User 'leot' querying 'policy': '我想離職, 目前己到職2年半,' with file: None
+2025-09-23 10:23:41,623 - INFO - Webhook call for '行政助理' succeeded.
+2025-09-23 10:24:07,802 - INFO - User 'leot' querying 'policy': '我想離職,是否有相關辦法?' with file: None
+2025-09-23 10:24:33,919 - INFO - Webhook call for '行政助理' succeeded.
+2025-09-23 10:25:56,910 - INFO - User 'leot' querying 'policy': '我想離職,有什麼規定?' with file: None
+2025-09-23 10:26:14,584 - INFO - Webhook call for '行政助理' succeeded.
+2025-09-23 10:27:32,726 - INFO - User 'leot' closed application.
+2025-09-23 10:38:56,281 - INFO - ================ Application Started ================
+2025-09-23 13:32:22,829 - INFO - ================ Application Started ================
+2025-09-23 13:32:33,689 - INFO - User 'leot' is attempting to log in.
+2025-09-23 13:32:33,863 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-23 13:34:13,073 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Documents/遠端桌面重新導向印表機文件.pdf
+2025-09-23 13:34:13,210 - ERROR - Webhook call for '翻譯助理' failed: 404 Client Error: Not Found for url: http://192.168.88.43:5678/webhook/process-document
+Traceback (most recent call last):
+  File "c:\Users\leot\Desktop\AD_Assistant\main.py", line 365, in perform_assistant_query
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\leot\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://192.168.88.43:5678/webhook/process-document
+2025-09-23 13:35:26,128 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Documents/遠端桌面重新導向印表機文件.pdf
+2025-09-23 13:35:26,225 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 13:39:55,815 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Desktop/逐字稿.txt
+2025-09-23 13:39:55,910 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 14:02:31,710 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Downloads/1. Walmart, Inc.pdf
+2025-09-23 14:02:31,833 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 14:39:50,693 - INFO - User 'leot' querying 'erp': '己核發的料無法發貨為什麼?' with file: None
+2025-09-23 14:40:06,729 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-23 14:40:52,497 - INFO - User 'leot' querying 'erp': '己核發無法取消' with file: None
+2025-09-23 14:41:10,186 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-23 14:41:51,579 - INFO - User 'leot' querying 'erp': '己核發無法再其它單子撿貨' with file: None
+2025-09-23 14:42:03,631 - INFO - Webhook call for 'ERP助理' succeeded.
+2025-09-23 14:48:11,305 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Downloads/enterprise-manager-introduction.pdf
+2025-09-23 14:48:11,687 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 14:48:48,761 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Downloads/enterprise-manager-introduction.pdf
+2025-09-23 14:53:05,006 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 14:54:02,297 - INFO - User 'leot' closed application.
+2025-09-23 14:54:37,301 - INFO - ================ Application Started ================
+2025-09-23 14:54:44,046 - INFO - User 'leot' is attempting to log in.
+2025-09-23 14:54:44,163 - INFO - User 'leot' logged in successfully. Groups: ['LCConfidential', 'LCIT']
+2025-09-23 14:55:06,530 - INFO - User 'leot' querying 'transiting': '' with file: C:/Users/leot/Downloads/enterprise-manager-introduction.pdf
+2025-09-23 14:57:51,276 - INFO - Webhook call for '翻譯助理' succeeded.
+2025-09-23 15:01:23,255 - INFO - User 'leot' closed application.

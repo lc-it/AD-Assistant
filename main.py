@@ -40,7 +40,7 @@ ASSISTANT_WEBHOOKS = {
     "policy": "http://192.168.88.43:5678/webhook/OpenWebUIAdminAgent",
     "erp": "http://192.168.88.43:5678/webhook/ERPAgentWithFile",
     "meeting": "http://192.168.88.43:5678/webhook/MeetingAgentWithFile",
-    "it": "YOUR_IT_ASSISTANT_WEBHOOK_URL",
+    "transiting": "http://192.168.88.43:5678/webhook/process-document",
 }
 
 # --- AD 設定 ---
@@ -215,6 +215,10 @@ class MainWindow(tk.Toplevel):
                 "name": "會議助理", "webhook_key": "meeting",
                 "welcome_message": "您好，我是會議助理。您可以上傳會議的錄音檔(mp3,wma等錄音檔)或逐字稿，我能為您產出會議記錄與待辦事項。"
             },
+            "G_Assistant_TransitUsers": {
+                "name": "翻譯助理", "webhook_key": "transiting",
+                "welcome_message": "您好，我是翻譯助理。您可以上傳PDF或TXT檔，我能為您產出翻譯及重點整理。"
+            },
         }
         for group, info in ASSISTANT_MAPPING.items():
             # if group in self.user_groups:
@@ -352,11 +356,11 @@ class MainWindow(tk.Toplevel):
                 with open(filepath, 'rb') as f:
                     files = {'file': (filename, f, content_type)}
                     payload = {'query': query}
-                    response = requests.post(webhook_url, files=files, data=payload, timeout=360)
+                    response = requests.post(webhook_url, files=files, data=payload, timeout=600)
             else:
                 payload = {"query": query}
                 headers = {'Content-Type': 'application/json'}
-                response = requests.post(webhook_url, json=payload, headers=headers, timeout=60)
+                response = requests.post(webhook_url, json=payload, headers=headers, timeout=75)
             
             response.raise_for_status()
             response_data = response.json()
