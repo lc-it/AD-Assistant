@@ -32,7 +32,7 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 # --- 全域設定 ---
-CURRENT_VERSION = "1.1.3"
+CURRENT_VERSION = "1.1.5"
 UPDATE_INFO_URL = "https://raw.githubusercontent.com/lc-it/AD-Assistant/main/version.json"
 APP_NAME = "MyAssistant.exe"
 
@@ -70,9 +70,9 @@ def check_for_updates():
             print("發現新版本！")
             if messagebox.askyesno(
                 "發現新版本",
-                f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n是否要立即下載並更新？"
+                f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n請下載更新!"
             ):
-                perform_update(download_url)
+            #perform_update(download_url)
         else:
             print("目前已是最新版本。")
     except requests.exceptions.RequestException as e:
@@ -163,6 +163,15 @@ class MainWindow(tk.Toplevel):
         self.configure(bg=BG_COLOR)
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
 
+        try:
+            send_icon_image = Image.open(resource_path("send_icon.png")).resize((20, 20), Image.Resampling.LANCZOS)
+            self.send_icon = ImageTk.PhotoImage(send_icon_image)
+            avatar_image = Image.open(resource_path("avatar.png")).resize((40, 40), Image.Resampling.LANCZOS)
+            self.avatar_icon = ImageTk.PhotoImage(avatar_image)
+        except Exception as e:
+            self.send_icon, self.avatar_icon = None, None
+            messagebox.showerror("資源錯誤", f"載入圖示時發生錯誤：{e}")
+            logging.error(f"Error loading icon: {e}", exc_info=True)
 
         tk.Label(self, text=f"歡迎, {self.username}！", font=FONT_BOLD, bg=BG_COLOR, fg=ACCENT_COLOR).pack(pady=10)
         
@@ -240,8 +249,7 @@ class MainWindow(tk.Toplevel):
         upload_button = tk.Button(frame, text="上傳檔案", font=FONT_NORMAL, bg=BUTTON_BG_COLOR, fg=TEXT_COLOR, relief="flat", command=lambda: self.select_file(name))
         upload_button.grid(row=2, column=1, sticky="ew", padx=(0, 5), ipady=4)
         
-        # 【修正】移除了 compound="left" 和 image=self.send_icon 參數
-        query_button = tk.Button(frame, text="發送", font=FONT_NORMAL, bg=BUTTON_BG_COLOR, fg=TEXT_COLOR, activebackground=ACCENT_COLOR, activeforeground=BG_COLOR, relief="flat", padx=10)
+        query_button = tk.Button(frame, text=" 發送", font=FONT_NORMAL, bg=BUTTON_BG_COLOR, fg=TEXT_COLOR, activebackground=ACCENT_COLOR, activeforeground=BG_COLOR, relief="flat", padx=10, compound="left", image=self.send_icon)
         query_button.grid(row=2, column=2, sticky="ew", padx=(0, 10), ipady=4)
 
         file_status_label = tk.Label(frame, text="未選擇檔案", font=("Microsoft JhengHei", 8), bg=BG_COLOR, fg="grey")
@@ -290,7 +298,11 @@ class MainWindow(tk.Toplevel):
         paragraph_tag = "user_paragraph" if sender == "You" else "assistant_paragraph"
         start_index = text_widget.index(f"{tk.END}-1c")
         
-        
+        if sender != "You" and self.avatar_icon:
+            text_widget.insert(tk.END, ' ')
+            text_widget.image_create(tk.END, image=self.avatar_icon, padx=5)
+            text_widget.insert(tk.END, ' ')
+
         text_widget.insert(tk.END, f"{sender}: ", sender_tag)
         message_start_index = text_widget.index(tk.END)
         
