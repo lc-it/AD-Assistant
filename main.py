@@ -352,11 +352,11 @@ class MainWindow(tk.Toplevel):
                 with open(filepath, 'rb') as f:
                     files = {'file': (filename, f, content_type)}
                     payload = {'query': query}
-                    response = requests.post(webhook_url, files=files, data=payload, timeout=300)
+                    response = requests.post(webhook_url, files=files, data=payload, timeout=360)
             else:
                 payload = {"query": query}
                 headers = {'Content-Type': 'application/json'}
-                response = requests.post(webhook_url, json=payload, headers=headers, timeout=50)
+                response = requests.post(webhook_url, json=payload, headers=headers, timeout=60)
             
             response.raise_for_status()
             response_data = response.json()
