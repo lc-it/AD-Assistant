@@ -72,9 +72,10 @@ def check_for_updates():
                 "發現新版本",
                 f"偵測到新版本 {latest_version}！\n\n更新內容：\n{release_notes}\n\n請下載更新!"
             ):
-            #perform_update(download_url)
-        else:
-            print("目前已是最新版本。")
+                perform_update(download_url)
+            
+        #else:
+        #    print("目前已是最新版本。")
     except requests.exceptions.RequestException as e:
         print(f"警告：無法連線至更新伺服器，略過更新檢查。錯誤: {e}")
     except Exception as e:
@@ -82,22 +83,24 @@ def check_for_updates():
 
 def perform_update(download_url):
     """執行下載和更新"""
-    try:
-        current_path = os.path.realpath(sys.executable)
-        new_file_path = current_path + ".new"
+    print("請聯絡系統管理員。")
+    #
+    #try:
+    #    current_path = os.path.realpath(sys.executable)
+    #    new_file_path = current_path + ".new"
         
-        print(f"正在從 {download_url} 下載新版本至 {new_file_path}...")
+    #   print(f"正在從 {download_url} 下載新版本至 {new_file_path}...")
+    #    
+    #    with requests.get(download_url, stream=True) as r:
+    #        r.raise_for_status()
+    #        with open(new_file_path, 'wb') as f:
+    #            for chunk in r.iter_content(chunk_size=8192): 
+    #                f.write(chunk)
         
-        with requests.get(download_url, stream=True) as r:
-            r.raise_for_status()
-            with open(new_file_path, 'wb') as f:
-                for chunk in r.iter_content(chunk_size=8192): 
-                    f.write(chunk)
+    #    print("下載完成。")
         
-        print("下載完成。")
-        
-        updater_script_path = os.path.join(os.path.dirname(current_path), "updater.bat")
-        script_content = f"""
+    #    updater_script_path = os.path.join(os.path.dirname(current_path), "updater.bat")
+    #    script_content = f"""
 @echo off
 echo 更新中，請稍候...
 timeout /t 2 /nobreak
